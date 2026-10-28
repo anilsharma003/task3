@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background: linear-gradient(180deg,rgba(16, 201, 234, 0.532 )20%,rgb(255, 140, 159)60%);
+             min-height: 100vh;
+            
+        }
+      .cart{
+        display: grid;
+         grid-template-columns: repeat(3,270px);
+         gap: 20px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 70px;
+      }  
+     
+      .car{
+        height: 300px;
+        width: 250px;
+         border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 2px 3px 4px 3px; 
+        background-color:rgba(16, 201, 234, 0.532 ) ;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      }
+     img{
+        height:200px ;
+        width:230px ;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 5px;
+
+
+     }
+
+    
+      h1{
+        text-align: center;
+      }
+      button{
+           background-color: rgb( 3,248,207);
+           border-radius: 20px;
+           margin-top: 20px;
+           border: none;
+           
+      }
+      @media(max-width:800px){
+        .cart{
+            grid-template-columns: 1fr;
+        }
+      }
+    </style>
+</head>
+<body>
+    <h1>You can buy cars toys from here.. </h1>
+    <div class="cart">
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTx6fIyWP8qfI8VFPx0ESKM2QkFWRdcxtoueWmpXKtvg&s=10" alt="">Swing car<br><button>Add to cart</button></div>
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwnK2qfNvjbAejTiwX2VaTskqnKwjeVB-IKskLz8fb5g&s=10" alt=""> Truck<br><button>Add to cart</button></div>
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_eFDv2FivJrb3BTpOutlM5ZEgoyqa-EVtdM9NA1Zceg&s=10" alt="">Racing car<br><button>Add to cart</button></div>
+</div>
+    
+</body>
+</html>
